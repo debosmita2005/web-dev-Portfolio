@@ -1,0 +1,201 @@
+*{
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:"Nerko One", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+body{
+    background: #f5f5dc;
+    color: #1f242d;
+}
+.header{
+    top :5%;
+    left: 0;
+    width: 100%;
+    padding: 20px 10px;
+    background: transparent;
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    z-index: 100; 
+
+}
+.navbar a button{
+    margin-left: 1300px;
+    transition: .3s;
+    border-radius: 10%;
+    padding: 12px 28px;
+    background: #cb326d;
+    border-radius: 40px;
+    font-size: 16px;
+    color: #1f242d;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: .3s;
+}
+.navbar a button:hover,
+.navbar a button.active{
+    background: #1f242d;
+    color: #f5f5dc;
+
+}
+
+.site h2{
+    margin-top: 1%;
+    margin-left: 50px;
+    font-weight: 600px;
+    color: #cb326d;
+    opacity: 0;
+    animation: slide-right 1s ease forwards;
+    
+    
+}
+.site p{
+    width: 50%;
+    margin-left:2.5% ;
+    font-size: x-large;
+    margin-top: 10px;
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+    animation-delay:.5s;
+}
+.site img{
+    max-width: 200px;
+    margin-left: 70%;
+    margin-top:-16%;
+    opacity: 0;
+    animation: ZoomIn 1s ease forwards , floatImage 4s ease-in-out infinite;
+    animation-delay:.3s,3s;
+}
+
+.design H2{
+    margin-top: 10%;
+    margin-left: 50px;
+    font-weight: 600px;
+    color: #cb326d;
+    opacity: 0;
+    animation: slide-right 1s ease forwards;
+}
+.design img{
+    max-width: 200px;
+    margin-left: 70%;
+    margin-top:-16%;
+    opacity: 0;
+    animation: ZoomIn 1s ease forwards , floatImage 4s ease-in-out infinite;
+    animation-delay:.3s,3s;
+}
+
+.design P{
+    width: 50%;
+    margin-left:2.5% ;
+    font-size: x-large;
+    margin-top: 10px;
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+    animation-delay:.5s;
+}
+.java h2{
+    margin-top: 10%;
+    margin-left: 50px;
+    font-weight: 600px;
+    color: #cb326d;
+    opacity: 0;
+    animation: slide-right 1s ease forwards;
+}
+.java img{
+    max-width: 200px;
+    margin-left: 70%;
+    margin-top:-16%;
+    opacity: 0;
+    animation: ZoomIn 1s ease forwards , floatImage 4s ease-in-out infinite;
+    animation-delay:.3s,3s;
+    
+}
+.java p{
+    width: 50%;
+    margin-left:2.5% ;
+    font-size: x-large;
+    margin-top: 10px;
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+    animation-delay:.5s;
+}
+.canva h2{
+    margin-top: 10%;
+    margin-left: 50px;
+    font-weight: 600px;
+    color: #cb326d;
+    opacity: 0;
+    animation: slide-right 1s ease forwards;
+}
+.canva p{
+    width: 50%;
+    margin-left:2.5% ;
+    font-size: x-large;
+    margin-top: 10px;
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+    animation-delay:.5s;  
+}
+.canva img{
+    max-width: 200px;
+    margin-left: 70%;
+    margin-top:-16%;
+    opacity: 0;
+    animation: ZoomIn 1s ease forwards , floatImage 4s ease-in-out infinite;
+    animation-delay:.3s,3s;
+}
+.contain h1{
+    font-size: 50px;
+    color: #cb326d;
+    margin-top: 50px;
+    margin-left:5% ;
+    opacity: 0;
+    animation: slide-right 1s ease forwards;  
+}
+.load h2{
+    font-size: 40px;
+    color: #cb326d;
+    margin-top: 50px;
+    margin-left:5% ;
+    opacity: 0;
+    animation: slide-right 1s ease forwards;
+
+}
+
+@keyframes ZoomIn {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-right {
+    0% {
+        transform: translatex(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translatex(0);
+        opacity: 1;
+    }
+    
+}
+
+@keyframes slideTop {
+    0% {
+        transform: translatey(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translatey(0);
+        opacity: 1;
+    }
+}
